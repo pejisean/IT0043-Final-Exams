@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h2 {
+    padding: 0;
+    margin-top: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Use viewport width */
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+.background {
+    display: flex; /* Use flexbox to align children in a row */
+    justify-content: flex-start; /* Align items to the start */
+    align-items: flex-start; /* Align items to the top */
+    height: auto; /* Allow height to be determined by content */
+    box-sizing: border-box;
+    background-color: #3f4e51;
+}
+
+.sidebar {
+    display: flex;
+    text-align: center;
+    border-color: #66746c;
+    padding: 0;
+    color: #ecac8e;
+    width: 20%; /* Fixed width for the sidebar */
+    flex-direction: column;
+    flex-grow: 0; /* Prevent growing */
+    flex-shrink: 0; /* Prevent shrinking */
+    position: sticky; /* Optional: stick to the top */
+    top: 0; /* Optional: stick to the top of the viewport */
+    height: 100vh; /* Full height of the viewport */
+    background-color: #3f4e51; /* Background color for sidebar */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column; /* Keep the sidebar and main content in a column */
+    height: auto; /* Allow height to grow based on content */
+    box-sizing: border-box;
+    flex-grow: 1; /* Allow wrapper to grow and fill remaining space */
+    margin-left: 0; /* Ensure no left margin to avoid overlap */
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh; /* Use viewport height */
+    background-color: #66746c;
+    flex-shrink: 0;
+}
+
+.header a {
+    text-decoration: none;
+}
+
+.header img {
+    width: 15vw; /* Use viewport width */
+    height: auto;
+}
+
+.navigation a {
+    margin-left: 1.5vw; /* Use viewport width */
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.navigation a:hover {
+    text-decoration: none;
+}
+
+.header-banner {
+    text-align: center;
+    padding: 0;
+    background: url('https://wallpapers.com/images/hd/movie-theater-background-2048-x-1536-9wlq655dcp63cdi8.jpg') no-repeat center center;
+    background-size: cover;
+    flex-shrink: 0;
+    height: 20vh; /* Use viewport height */
+}
+
+.row-native {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 2vh; /* Use viewport height */
+}
+
+
+.sidebar img {
+    width: 30%; /* Make the image take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the image does not exceed the height of the sidebar */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+}
+
+.sidebar a {
+    color: whitesmoke;
+    transition: 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: #b6433e;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.intro-text-area, .showing, .about-us {
+    border-radius: 0.8vh; /* Use viewport height */
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #66746c;
+    color: #ecac8e;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 2vh; /* Use viewport height */
+}
+
+.about-us h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.about-us p {
+    font-size: 1.7vh; /* Use viewport height */
+    line-height: 1.5;
+    transition: color 0.3s ease-in-out;
+}
+
+.box img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form-container {
+    background-color: #e0e0e0;
+    padding: 2vh; /* Use viewport height */
+    border-radius: 0.8vh; /* Use viewport height */
+    box-shadow: 0 0 1vh rgba(0, 0, 0, 0.1);
+    width: 80vw; /* Use viewport width */
+    margin: auto;
+}
+
+.form-container h2 {
+    margin-bottom: 2vh; /* Use viewport height */
+    font-size: 2.8vh; /* Use viewport height */
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 0.5vh; /* Use viewport height */
+    color: #333;
+}
+
+input[type="text"],
+input[type="tel"],
+.form-container textarea {
+    width: 100%;
+    padding: 1vh; /* Use viewport height */
+    margin-bottom: 1.5vh; /* Use viewport height */
+    border: 1px solid #ccc;
+    border-radius: 0.4vh; /* Use viewport height */
+}
+
+.form-container button {
+    width: 100%;
+    padding: 1vh; /* Use viewport height */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 0.4vh; /* Use viewport height */
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #0056b3;
+}
+
+.form-container #message {
+    margin-top: 2vh; /* Use viewport height */
+    color: #333;
+}
+
+.footer {
+    text-align: center;
+    padding: 0.5vh; /* Use viewport height */
+    background-color: #66746c;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.footer img {
+    width: 10vw; /* Use viewport width */
+    height: auto;
+}
+
+
+.image-container {
+    display: flex; /* Use flexbox for a row layout */
+    justify-content: space-between; /* Space between images */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 10px; /* Space between images */
+    padding: 10px; /* Optional padding around the container */
+}
+
+.image-item {
+    position: relative; /* Position relative for absolute caption */
+    overflow: hidden; /* Hide overflow of the image */
+    flex: 1 1 calc(33.33% - 10px); /* Adjust to fit 3 images per row with gap */
+    max-width: calc(33.33% - 10px); /* Limit the max width to 33.33% */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.image-item img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 200px; /* Set a fixed height */
+    object-fit: cover; /* Cover the area while maintaining aspect ratio */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.image-item:hover img {
+    transform: scale(1.2); /* Scale image on hover */
+}
+
+.caption {
+    position: absolute; /* Position caption absolutely within the image item */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Padding around the caption */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.image-item:hover .caption {
+    opacity: 1; /* Show caption on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .image-item {
+        flex: 1 1 calc(50% - 10px); /* Adjust to fit 2 images per row */
+        max-width: calc(50% - 10px); /* Limit the max width to 50% */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-item {
+        flex: 1 1 100%; /* Stack images in a single column */
+        max-width: 100%; /* Limit the max width to 100% */
+    }
+}
